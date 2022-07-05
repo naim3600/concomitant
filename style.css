@@ -1,0 +1,481 @@
+/*==========================================
+    Common CSS
+==========================================*/
+body{
+    color: #888888;
+    font-size: 14px;
+    font-family: Georgia, sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    background: #1f1f1f;
+}
+.container{
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+._four_{
+    width: 23.5%;
+    float: left;
+    margin: 0 1%;
+}
+._four_:first-child{
+    margin-left: 0;
+}
+._four_:last-child{
+    margin-right: 0;
+}
+/*==========================================
+    Top Header Area CSS
+==========================================*/
+.header_area{
+    width: 100%;
+    clear: both;
+}
+#top_header_area{
+    width: 100%;
+    margin-top: 30px;
+    background: #1f1f1f;
+}
+.inner_top_header{
+    border-top: 5px solid #81b300;
+    background: #ffffff;
+}
+.content{
+    box-sizing: border-box;
+    padding: 0 3%;
+    overflow: hidden;
+}
+
+.social_area{
+    float: right;
+    width: 251px;
+    height: 48px;
+    background: #81b300;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-top: -5px;
+}
+.social_area ul li{
+    display: inline-block;
+    margin: 0 6px;
+}
+.social_area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_area ul li a i{
+    width: 33px;
+    height: 33px;
+    background: #1f1f1f;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 6px;
+    transition: 0.5s;
+}
+.social_area ul li a:hover i{background: #425a01;}
+.social_area ul li a:hover i.fa-linkedin-in{background: #0e76a8;} 
+.social_area ul li a:hover i.fa-twitter{background: #00acee;} 
+.social_area ul li a:hover i.fa-pinterest{background: #c8232c;} 
+.social_area ul li a:hover i.fa-google-plus-g{background: #dc4a38;} 
+.social_area ul li a:hover i.fa-rss{background: #ee802f;}
+
+/*==========================================
+    Main Header Area CSS
+==========================================*/
+#main_header_area{
+    width: 100%;
+    clear: both;
+    background: #1f1f1f;
+}
+.inner_header{
+    background: #ffffff;
+    padding: 34px 0 36px;
+}
+.logo_area{
+    width: 285px;
+    float: left;
+    position: absolute;
+    top: 66px;
+}
+.mini_menu{
+    float: right;
+}
+.mini_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.mini_menu ul li{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+.mini_menu ul li::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    width: 1px;
+    height: 12px;
+    background: #81b300;
+}
+.mini_menu ul li:last-child::after{
+    display: none;
+}
+.mini_menu ul li a{
+    color: #81b300;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/*==========================================
+    Main Menu Area CSS
+==========================================*/
+#main_menu_area{
+    width: 100%;
+    clear: both;
+    background: #1f1f1f;
+}
+.inner_menu{
+    background: #81b300;
+    height: 70px;
+}
+.main_memu{
+    float: left;
+    width: 72%;
+    margin-top: 24px;
+}
+.main_memu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.main_memu ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.main_memu ul li:last-child{
+    margin-right: 0;
+}
+.main_memu ul li a{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.main_memu ul li a:hover{
+    color: #000000;
+}
+.search_area{
+    float: right;
+    width: 28%;
+    margin-top: 22px;
+}
+.search_area form{
+    float: right;
+    width: 99%;
+    max-width: 285px;
+    background: #dddddd;
+    padding: .5%;
+}
+.search_area input{
+    width: 61.5%;
+    float: left;
+    border: 0px solid;
+    padding: 5px 2%;
+    color: #7f7f7f;
+}
+.search_area input::placeholder{
+    font-size: 12px;
+    color: #7f7f7f;
+}
+
+.search_area input[type="submit"]{
+    width: 34%;
+    float: right;
+    color: #81b300;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*==========================================
+    Slider Area CSS
+==========================================*/
+#slider_area{
+    width: 100%;
+    clear: both;
+    background: #1f1f1f;
+}
+.inner_slider{
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.slider_content{
+    max-width: 880px;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider_caption h2{
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #00ffff;
+}
+
+
+/*==========================================
+    Service Area CSS
+==========================================*/
+#service_area{
+    width: 100%;
+    background: #1f1f1f;
+    clear: both;
+}
+.inner_service{
+    background: #ffffff;
+}
+
+.inner_service .content{
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.child_service{
+    padding: 45px 0;
+}
+.child_service img{
+    display: block;
+    margin: 0 auto;
+}
+
+.child_service h2{
+    font-weight: normal;
+    text-align: center;
+}
+.child_service h2 a{
+    text-decoration: none;
+    color: #81b300;
+    font-size: 18px;
+}
+.child_service p{
+    color: #888888;
+    font-size: 14px;
+    text-indent: 14px;
+}
+
+
+/*==========================================
+    Work Area CSS
+==========================================*/
+#work_area{
+    width: 100%;
+    clear: both;
+    background: #1f1f1f;
+}
+.inner_work{
+    background: #ffffff;
+    padding: 45px 0;
+}
+.child_work img{
+    display: block;
+    border: 1px solid #e2e2e2;
+    padding: 4px;
+    margin: 0;
+}
+.child_work h3{
+    font-weight: normal;
+}
+.child_work h3 a{
+    color: #444444;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+    float: none;
+}
+.child_work h3 a:hover{
+    color: #81b300;
+}
+.child_work p{
+    color: #878787;
+    font-size: 14px;
+}
+.child_work a{
+    display: block;
+    float: right;
+    clear: both;
+    color: #81b300;
+    font-size: 14px;
+    text-decoration: none;
+}
+.child_work a:hover{
+    color: #ba2e1f;
+}
+
+
+/*==========================================
+    Footer Area CSS
+==========================================*/
+#footer_area{
+    width: 100%;
+    clear: both;
+    background: #1f1f1f;
+}
+.inner_footer{
+    background: #3b3b3b;
+    padding: 40px 0;
+}
+.child_footer h3{
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.child_footer p{
+    color: #999999;
+    font-size: 13px;
+}
+.child_footer p a{
+    color: #999999;
+    text-decoration: none;
+}
+.child_footer p a:hover{
+    color: #81b300;
+}
+
+.child_footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.child_footer ul li{
+    display: block;
+    padding: 7px 0;
+    border-bottom: 1px solid #484848;
+}
+.child_footer ul li:first-child{
+    padding-top: 0;
+}
+.child_footer ul li a{
+    color: #999999;
+    font-size: 12;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+}
+.child_footer ul li a:hover{
+    color: #81b300;
+}
+.child_footer h4{
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.child_footer h4 a{
+    color: #999999;
+    font-size: 13px;
+    text-decoration: none;
+    float: none;
+}
+.child_footer h4 a:hover{
+    color: #81b300;
+}
+.child_footer h6{
+    margin: 0;
+}
+.child_blog p{
+    margin: 0;
+}
+.child_blog a{
+    float: right;
+    color: #81b300;
+    font-size: 13px;
+    text-decoration: none;
+}
+.child_footer input{
+    width: 90%;
+    background: #1f1f1f;
+    padding: 10px 5%;
+    margin-bottom: 10px;
+    border: 0px solid;
+    border-radius: 5px;
+    color: #999999;
+    font-size: 14px;
+}
+.child_footer input::placeholder{
+    color: #999999;
+    font-size: 14px;
+}
+.child_footer input[type="submit"]{
+    width: 80px;
+    color: #81b300;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.child_footer input[type="submit"]:hover{
+    background: #81b300;
+    color: #ffffff;
+}
+
+/*==========================================
+    Copyright Area CSS
+==========================================*/
+#copyright_area{
+    width: 100%;
+    clear: both;
+    background: #1f1f1f;
+    padding-bottom: 30px;
+}
+.inner_copyright{
+    background: #2e2e2e;
+    padding: 25px 0;
+}
+.inner_copyright p{
+    margin: 0;
+    color: #737373;
+    font-size: 14px;
+}
+.left_copyright{
+    float: left;
+    width: 65%;
+}
+.right_copyright{
+    float: right;
+    width: 35%;
+    text-align: right;
+}
+
+
+
